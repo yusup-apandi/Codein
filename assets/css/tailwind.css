@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary{
+    display: flex;
+    width: 83px;
+    height: 30px;
+    overflow: hidden;
+    padding: 3px 4px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+}

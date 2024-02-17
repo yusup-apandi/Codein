@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIAP TAMPIL</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="relative overflow-x-hidden">
+    <nav class="fixed top-0 z-20 w-screen bg-white shadow" id="nav">
+        <div class="px-4 py-3  md:px-[24px] lg:px-[120px] flex justify-between items-center">
+            <!-- Brand (Logo) -->
+            <a class="items-center flex-1" href="/index.html">
+                <img src="assets/static/img/logo.svg" alt="Logo" class="w-auto h-16 mr-2">
+            </a>
+            <!-- Toggler untuk menu responsif -->
+            <div class="md:hidden">
+                <button type="button" class="text-gray-600 focus:outline-none" data-target="#menu"
+                    onclick="toggleMenu()">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7">
+                        </path>
+                    </svg>
+                    <span class="hidden">toggle</span>
+                </button>
+            </div>
+
+            <div class="hidden md:flex md:items-center md:space-x-4">
+                <a href="index.html" class="block mt-4 nav_active md:inline-block md:mt-0 text-primary-800 menu hover:bg-primary-50
+                    rounded-lg px-3 py-2">Beranda</a>
+                <a href="informasi.html"
+                    class="block mt-4 md:inline-block md:mt-0  text-primary-800 menu hover:bg-primary-50 rounded-lg px-3 py-2">Informasi
+                    Pelatihan</a>
+            </div>
+            <div class="hidden md:flex md:items-center md:ml-3">
+                <a href="pelatihan.html">
+                    <button type="button"
+                        class="w-full px-4 py-2 text-sm font-bold text-center text-white rounded-lg hover:bg-primary-700 bg-primary-500">
+                        Pengajuan Pelatihan
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="hidden px-4 pb-4 space-y-2 md:hidden md:items-center" id="menu">
+            <a href="index.html" class="block nav_active md:inline-block md:mt-0 text-primary-800 menu hover:bg-primary-50 rounded-lg
+                px-3 py-2">Beranda</a>
+            <a href="informasi.html"
+                class="block md:inline-block md:mt-0 text-primary-800 menu hover:bg-primary-50 rounded-lg px-3 py-2">Informasi
+                Pelatihan</a>
+            <a href="#">
+                <button type="button"
+                    class="w-full mt-2 px-4 py-2 text-sm font-bold text-center text-white rounded-lg hover:bg-primary-700 bg-primary-500">
+                    Pengajuan Pelatihan
+                </button>
+            </a>
+            <a href="#">
+                <button type="button"
+                    class="w-full mt-2 px-4 py-2 text-sm font-bold text-center text-white rounded-lg hover:bg-primary-700 bg-primary-500">
+                    Pengajuan Pelatihan
+                </button>
+            </a>
+        </div>
+    </nav>
+
+
+    <main class="mt-16 sm:mt-8">
+        <section id="terampil" class="w-full px-[16px] md:px-[24px] lg:px-[120px] pt-12  md:pt-[86px] pb-12">
+            <div class="flex flex-col space-y-2">
+                <h2 class="text-3xl font-semibold text-primary-900">Layanan Yang Tersedia</h2>
+                <p class="text-xl text-gray-500 ">Kini lebih mudah akses layanan data konstruksi</p>
+            </div>
+            <div
+                class="mx-auto grid gap-y-6 p-6 sm:grid-cols-2 sm:gap-8 sm:py-8 lg:grid-cols-5 lg:px-8 lg:py-12 xl:py-16">
+                <a href="izin-usaha.html"
+                    class="-m-3 flex flex-col justify-between rounded-lg p-3 transition duration-150 ease-in-out hover:bg-gray-50">
+                    <div class="flex md:h-full lg:flex-col">
+                        <div class="flex-shrink-0">
+                            <div
+                                class="inline-flex h-10 w-10 items-center justify-center rounded-md text-white sm:h-28 sm:w-28">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="112" height="112" viewBox="0 0 72 72"
+                                    fill="none">
+                                    <circle cx="36" cy="36" r="31.0345" fill="#030F6B" />
+                                    <path
+                                        d="M32.8391 20H39.7586C40.6762 20 41.5562 20.3645 42.205 21.0133C42.8539 21.6622 43.2184 22.5422 43.2184 23.4598V26.9195H50.1379C51.0555 26.9195 51.9355 27.2841 52.5844 27.9329C53.2332 28.5817 53.5977 29.4617 53.5977 30.3793V49.408C53.5977 50.3256 53.2332 51.2056 52.5844 51.8545C51.9355 52.5033 51.0555 52.8678 50.1379 52.8678H22.4598C21.5422 52.8678 20.6622 52.5033 20.0133 51.8545C19.3645 51.2056 19 50.3256 19 49.408V30.3793C19 29.4617 19.3645 28.5817 20.0133 27.9329C20.6622 27.2841 21.5422 26.9195 22.4598 26.9195H29.3793V23.4598C29.3793 22.5422 29.7438 21.6622 30.3927 21.0133C31.0415 20.3645 31.9215 20 32.8391 20ZM39.7586 26.9195V23.4598H32.8391V26.9195H39.7586ZM33.704 46.8132L45.104 35.4133L42.6648 32.9741L33.704 41.9176L30.0886 38.3195L27.6494 40.7586L33.704 46.8132Z"
+                                        fill="#EFB803" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="ml-4 md:flex md:flex-1 md:flex-col md:justify-between lg:ml-0 lg:mt-4">
+                            <div>
+                                <p class="text-base font-medium text-primary-900">Izin Usaha Nasional</p>
+                                <p class="mt-1 text-sm text-gray-500">Temukan data izin usaha nasional konstruksi
+                                    yang terdaftar di SIMJAKON PUTR Kabupaten Sumedang</p>
+                            </div>
+                            <p class="mt-2 text-sm font-medium text-primary-600 lg:mt-4">
+                                Lihat
+                                <span aria-hidden="true"> &rarr;</span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="/regulasi.html"
+                    class="-m-3 flex flex-col justify-between rounded-lg p-3 transition duration-150 ease-in-out hover:bg-gray-50">
+                    <div class="flex md:h-full lg:flex-col">
+                        <div class="flex-shrink-0">
+                            <div class="inline-flex h-10 w-10 items-center justify-center rounded-md text-white sm:h-28
+                                sm:w-28">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="112" height="112" viewBox="0 0 58 58"
+                                    fill="none">
+                                    <circle cx="29" cy="29" r="25" fill="#030F6B" />
+                                    <path
+                                        d="M38.9833 30.05L32.3333 36.7H29.65V34.0167L36.3 27.3667L38.9833 30.05ZM42.95 29.1167C42.95 29.4667 42.6 29.8167 42.25 30.1667L39.3333 33.0833L38.2833 32.0333L41.3167 29L40.6167 28.3L39.8 29.1167L37.1167 26.4333L39.6833 23.9833C39.9167 23.75 40.3833 23.75 40.7333 23.9833L42.3667 25.6167C42.6 25.85 42.6 26.3167 42.3667 26.6667C42.1333 26.9 41.9 27.1333 41.9 27.3667C41.9 27.6 42.1333 27.8333 42.3667 28.0667C42.7167 28.4167 43.0667 28.7667 42.95 29.1167ZM19.5 38.3333V19.6667H27.6667V25.5H33.5V27.25L35.8333 24.9167V24.3333L28.8333 17.3333H19.5C18.2167 17.3333 17.1667 18.3833 17.1667 19.6667V38.3333C17.1667 39.6167 18.2167 40.6667 19.5 40.6667H33.5C34.7833 40.6667 35.8333 39.6167 35.8333 38.3333H19.5ZM28.8333 34.95C28.6 34.95 28.3667 35.0667 28.25 35.0667L27.6667 32.5H25.9167L23.4667 34.4833L24.1667 31.3333H22.4167L21.25 37.1667H23L26.3833 34.1333L27.0833 36.8167H28.25L28.8333 36.7V34.95Z"
+                                        fill="#EFB803" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="ml-4 md:flex md:flex-1 md:flex-col md:justify-between lg:ml-0 lg:mt-4">
+                            <div>
+                                <p class="text-base font-medium text-primary-900">Regulasi</p>
+                                <p class="mt-1 text-sm text-gray-500">Temukan data regulasi di SIMJAKON PUTR
+                                    Kabupaten
+                                    Sumedang</p>
+                            </div>
+                            <p class="mt-2 text-sm font-medium text-primary-600 lg:mt-4">
+                                Lihat
+                                <span aria-hidden="true"> &rarr;</span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#"
+                    class="-m-3 flex flex-col justify-between rounded-lg p-3 transition duration-150 ease-in-out hover:bg-gray-50">
+                    <div class="flex md:h-full lg:flex-col">
+                        <div class="flex-shrink-0">
+                            <div
+                                class="inline-flex h-10 w-10 items-center justify-center rounded-md text-white sm:h-28 sm:w-28">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="112" height="112" viewBox="0 0 58 58"
+                                    fill="none">
+                                    <circle cx="29" cy="29" r="25" fill="#030F6B" />
+                                    <path
+                                        d="M29 32.5C23.8433 32.5 19.6667 34.5883 19.6667 37.1667V39.5H38.3333V37.1667C38.3333 34.5883 34.1567 32.5 29 32.5ZM24.3333 25.5C24.3333 26.7377 24.825 27.9247 25.7002 28.7998C26.5753 29.675 27.7623 30.1667 29 30.1667C30.2377 30.1667 31.4247 29.675 32.2998 28.7998C33.175 27.9247 33.6667 26.7377 33.6667 25.5M28.4167 17.3333C28.0667 17.3333 27.8333 17.5783 27.8333 17.9167V21.4167H26.6667V18.5C26.6667 18.5 24.0417 19.5033 24.0417 22.875C24.0417 22.875 23.1667 23.0383 23.1667 24.3333H34.8333C34.775 23.0383 33.9583 22.875 33.9583 22.875C33.9583 19.5033 31.3333 18.5 31.3333 18.5V21.4167H30.1667V17.9167C30.1667 17.5783 29.945 17.3333 29.5833 17.3333H28.4167Z"
+                                        fill="#EFB803" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="ml-4 md:flex md:flex-1 md:flex-col md:justify-between lg:ml-0 lg:mt-4">
+                            <div>
+                                <p class="text-base font-medium text-primary-900">PJTBU</p>
+                                <p class="mt-1 text-sm text-gray-500">Temukan data PJTBU yang terdaftar di SIMJAKON
+                                    PUTR Kabupaten Sumedang</p>
+                            </div>
+                            <p class="mt-2 text-sm font-medium text-primary-600 lg:mt-4">
+                                Lihat
+                                <span aria-hidden="true"> &rarr;</span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="pjskbu.html"
+                    class="-m-3 flex flex-col justify-between rounded-lg p-3 transition duration-150 ease-in-out hover:bg-gray-50">
+                    <div class="flex md:h-full lg:flex-col">
+                        <div class="flex-shrink-0">
+                            <div
+                                class="inline-flex h-10 w-10 items-center justify-center rounded-md text-white sm:h-28 sm:w-28">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="112" height="112" viewBox="0 0 58 58"
+                                    fill="none">
+                                    <circle cx="29" cy="29" r="25" fill="#030F6B" />
+                                    <path
+                                        d="M29 18.5C31.5783 18.5 33.6667 20.5883 33.6667 23.1667C33.6667 25.745 31.5783 27.8333 29 27.8333C26.4217 27.8333 24.3333 25.745 24.3333 23.1667C24.3333 20.5883 26.4217 18.5 29 18.5ZM33.6667 30.7967C33.6667 32.0333 33.34 34.915 31.1117 38.135L30.1667 32.5L31.2633 30.3067C30.54 30.225 29.7817 30.1667 29 30.1667C28.2183 30.1667 27.46 30.225 26.7367 30.3067L27.8333 32.5L26.8883 38.135C24.66 34.915 24.3333 32.0333 24.3333 30.7967C21.545 31.6133 19.6667 33.0833 19.6667 34.8333V39.5H38.3333V34.8333C38.3333 33.0833 36.4667 31.6133 33.6667 30.7967Z"
+                                        fill="#EFB803" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="ml-4 md:flex md:flex-1 md:flex-col md:justify-between lg:ml-0 lg:mt-4">
+                            <div>
+                                <p class="text-base font-medium text-primary-900">PJSKBU</p>
+                                <p class="mt-1 text-sm text-gray-500">Temukan data PJSKBU yang terdaftar di SIMJAKON
+                                    PUTR Kabupaten Sumedang</p>
+                            </div>
+                            <p class="mt-2 text-sm font-medium text-primary-600 lg:mt-4">
+                                Lihat
+                                <span aria-hidden="true"> &rarr;</span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="pjskbu.html"
+                    class="-m-3 flex flex-col justify-between rounded-lg p-3 transition duration-150 ease-in-out hover:bg-gray-50">
+                    <div class="flex md:h-full lg:flex-col">
+                        <div class="flex-shrink-0">
+                            <div
+                                class="inline-flex h-10 w-10 items-center justify-center rounded-md text-white sm:h-28 sm:w-28">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="112" height="112" viewBox="0 0 72 72"
+                                    fill="none">
+                                    <circle cx="36" cy="36" r="31.0345" fill="#030F6B" />
+                                    <path
+                                        d="M36 40.3448C29.5986 40.3448 24.4138 42.9372 24.4138 46.1379V49.0345H47.5862V46.1379C47.5862 42.9372 42.4014 40.3448 36 40.3448ZM30.2069 31.6552C30.2069 33.1916 30.8172 34.6651 31.9037 35.7515C32.9901 36.8379 34.4636 37.4483 36 37.4483C37.5364 37.4483 39.0099 36.8379 40.0963 35.7515C41.1828 34.6651 41.7931 33.1916 41.7931 31.6552M35.2759 21.5172C34.8414 21.5172 34.5517 21.8214 34.5517 22.2414V26.5862H33.1034V22.9655C33.1034 22.9655 29.8448 24.211 29.8448 28.3966C29.8448 28.3966 28.7586 28.5993 28.7586 30.2069H43.2414C43.169 28.5993 42.1552 28.3966 42.1552 28.3966C42.1552 24.211 38.8965 22.9655 38.8965 22.9655V26.5862H37.4483V22.2414C37.4483 21.8214 37.1731 21.5172 36.7241 21.5172H35.2759Z"
+                                        fill="#EFB803" />
+                                    <path
+                                        d="M45.6385 38.7198C45.544 38.8051 45.4449 38.885 45.3415 38.9592C45.1627 39.0792 44.9617 39.162 44.7505 39.204C44.6587 39.222 44.5627 39.2298 44.3713 39.2448C43.8907 39.2832 43.6501 39.3024 43.4497 39.3732C43.2206 39.4541 43.0125 39.5853 42.8406 39.7572C42.6688 39.929 42.5376 40.1371 42.4567 40.3662C42.3859 40.5666 42.3667 40.8072 42.3283 41.2878C42.3218 41.4149 42.3081 41.5415 42.2875 41.667C42.2455 41.8782 42.1627 42.0792 42.0427 42.258C41.9905 42.336 41.9281 42.4092 41.8033 42.555C41.4907 42.9222 41.3341 43.1058 41.2423 43.2978C41.0305 43.7418 41.0305 44.2578 41.2423 44.7018C41.3341 44.8938 41.4907 45.0774 41.8033 45.4446C41.9281 45.5904 41.9905 45.6636 42.0427 45.7416C42.1627 45.9204 42.2455 46.1214 42.2875 46.3326C42.3055 46.4244 42.3133 46.5204 42.3283 46.7118C42.3667 47.1924 42.3859 47.433 42.4567 47.6334C42.5376 47.8626 42.6688 48.0707 42.8406 48.2425C43.0125 48.4144 43.2206 48.5455 43.4497 48.6264C43.6501 48.6972 43.8907 48.7164 44.3713 48.7548C44.5627 48.7698 44.6587 48.7776 44.7505 48.7956C44.9617 48.8376 45.1627 48.921 45.3415 49.0404C45.4195 49.0926 45.4927 49.155 45.6385 49.2798C46.0057 49.5924 46.1893 49.749 46.3813 49.8408C46.8253 50.0526 47.3413 50.0526 47.7853 49.8408C47.9773 49.749 48.1609 49.5924 48.5281 49.2798C48.6739 49.155 48.7471 49.0926 48.8251 49.0404C49.0039 48.9204 49.2049 48.8376 49.4161 48.7956C49.5079 48.7776 49.6039 48.7698 49.7953 48.7548C50.2759 48.7164 50.5165 48.6972 50.7169 48.6264C50.9461 48.5455 51.1542 48.4144 51.326 48.2425C51.4978 48.0707 51.629 47.8626 51.7099 47.6334C51.7807 47.433 51.7999 47.1924 51.8383 46.7118C51.8533 46.5204 51.8611 46.4244 51.8791 46.3326C51.9211 46.1214 52.0045 45.9204 52.1239 45.7416C52.1761 45.6636 52.2385 45.5904 52.3633 45.4446C52.6759 45.0774 52.8325 44.8938 52.9243 44.7018C53.1361 44.2578 53.1361 43.7418 52.9243 43.2978C52.8325 43.1058 52.6759 42.9222 52.3633 42.555C52.2779 42.4607 52.198 42.3615 52.1239 42.258C52.004 42.0792 51.9208 41.8783 51.8791 41.667C51.8585 41.5415 51.8449 41.4149 51.8383 41.2878C51.7999 40.8072 51.7807 40.5666 51.7099 40.3662C51.629 40.1371 51.4978 39.929 51.326 39.7572C51.1542 39.5853 50.9461 39.4541 50.7169 39.3732C50.5165 39.3024 50.2759 39.2832 49.7953 39.2448C49.6683 39.2383 49.5417 39.2247 49.4161 39.204C49.2049 39.1623 49.004 39.0791 48.8251 38.9592C48.7218 38.885 48.6226 38.8051 48.5281 38.7198C48.1609 38.4072 47.9773 38.2506 47.7853 38.1588C47.5661 38.0541 47.3263 37.9997 47.0833 37.9997C46.8404 37.9997 46.6005 38.0541 46.3813 38.1588C46.1893 38.2506 46.0057 38.4072 45.6385 38.7198Z"
+                                        fill="white" />
+                                    <path
+                                        d="M49.715 43.0616C49.8042 42.9812 49.8536 42.8733 49.8525 42.7614C49.8514 42.6495 49.7999 42.5425 49.7091 42.4633C49.6183 42.3842 49.4954 42.3393 49.3669 42.3383C49.2385 42.3374 49.1148 42.3804 49.0224 42.4582L46.104 45.001L45.1442 44.1648C45.0519 44.087 44.9281 44.0439 44.7997 44.0449C44.6712 44.0459 44.5484 44.0908 44.4575 44.1699C44.3667 44.249 44.3152 44.3561 44.3141 44.468C44.313 44.5799 44.3624 44.6877 44.4517 44.7682L45.7574 45.9059C45.8492 45.9858 45.9737 46.0306 46.1034 46.0306C46.2331 46.0306 46.3576 45.9858 46.4494 45.9059L49.715 43.0616Z"
+                                        fill="#EFB803" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="ml-4 md:flex md:flex-1 md:flex-col md:justify-between lg:ml-0 lg:mt-4">
+                            <div>
+                                <p class="text-base font-medium text-primary-900">Tenaga Terampil Konstruksi</p>
+                                <p class="mt-1 text-sm text-gray-500">Temukan data Tenaga Terampil Konstruksi yang
+                                    terdaftar di SIMJAKON
+                                    PUTR Kabupaten Sumedang</p>
+                            </div>
+                            <p class="mt-2 text-sm font-medium text-primary-600 lg:mt-4">
+                                Lihat
+                                <span aria-hidden="true"> &rarr;</span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section id="Informasi" class="w-full px-[16px] md:px-[24px] lg:px-[120px] py-20 bg-gray-50">
+            <div class="flex flex-col space-y-2">
+                <h2 class="text-3xl font-semibold text-primary-900">Informasi Pelatihan dan Uji Kompetensi</h2>
+                <p class="text-xl text-gray-500 ">Update informasi terkait pelatihan dan uji kompetensi</p>
+            </div>
+
+            <div class="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3 ">
+                <div class="flex flex-col transition duration-150 ease-in-out p-4 hover:bg-white hover:rounded-2xl ">
+                    <div class="flex-shrink-0">
+                        <img class="h-48 w-full object-cover rounded-xl"
+                            src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
+                            alt="">
+                    </div>
+                    <div class="flex flex-1 flex-col justify-between pt-3">
+                        <div class="flex-1">
+                            <p class="text-sm font-medium text-gray-500">
+                                Mar 16, 2020
+                            </p>
+                            <a href="singgle-page.html" class="mt-2 block">
+                                <p class="text-xl font-semibold text-primary-900">Boost your conversion rate</p>
+                                <p class="mt-3 text-base text-gray-500 line-clamp-2">Lorem ipsum dolor sit amet
+                                    consectetur
+                                    adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga
+                                    culpa,
+                                    similique sequi cum eos quis dolorum.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col transition duration-150 ease-in-out p-4 hover:bg-white hover:rounded-2xl ">
+                    <div class="flex-shrink-0">
+                        <img class="h-48 w-full object-cover rounded-xl"
+                            src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
+                            alt="">
+                    </div>
+                    <div class="flex flex-1 flex-col justify-between pt-3">
+                        <div class="flex-1">
+                            <p class="text-sm font-medium text-gray-500">
+                                Mar 16, 2020
+                            </p>
+                            <a href="singgle-page.html" class="mt-2 block">
+                                <p class="text-xl font-semibold text-primary-900">Boost your conversion rate</p>
+                                <p class="mt-3 text-base text-gray-500 line-clamp-2">Lorem ipsum dolor sit amet
+                                    consectetur
+                                    adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga
+                                    culpa,
+                                    similique sequi cum eos quis dolorum.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col transition duration-150 ease-in-out p-4 hover:bg-white hover:rounded-2xl ">
+                    <div class="flex-shrink-0">
+                        <img class="h-48 w-full object-cover rounded-xl"
+                            src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
+                            alt="">
+                    </div>
+                    <div class="flex flex-1 flex-col justify-between pt-3">
+                        <div class="flex-1">
+                            <p class="text-sm font-medium text-gray-500">
+                                Mar 16, 2020
+                            </p>
+                            <a href="singgle-page.html" class="mt-2 block">
+                                <p class="text-xl font-semibold text-primary-900">Boost your conversion rate</p>
+                                <p class="mt-3 text-base text-gray-500 line-clamp-2">Lorem ipsum dolor sit amet
+                                    consectetur
+                                    adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga
+                                    culpa,
+                                    similique sequi cum eos quis dolorum.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+
+        </section>
+    </main>
+    <footer class="bg-primary-500 px-[16px] md:px-[24px] lg:px-[120px]" aria-labelledby="footer-heading">
+        <div class="mx-auto pb-8 pt-16 ">
+            <div class="flex flex-col lg:flex-row justify-between gap-4">
+                <div class="flex flex-col gap-2 w-full lg:w-1/3">
+                    <img class="h-7 w-fit" src="assets/img/logo.png" alt="SIAP TAMPIL">
+                    <p class="text-sm text-gray-200">SIAP TAMPIL (Sistem Informasi Pelayanan Tenaga
+                        Terampil Konstruksi) dikelola
+                        oleh Bidang Bina Konstruksi Dinas Pekerjaan Umum dan Tata Ruang Kab. Sumedang.</p>
+                </div>
+                <div class="flex flex-col gap-2 flex-1 m-0">
+                    <h3 class="text-xl font-semibold leading-6 text-white">Alamat</h3>
+                    <p class="text-sm text-gray-200">Jl. R.A. Kartini No.13, Regol Wetan, Kec.
+                        Sumedang Sel., Kabupaten Sumedang, Jawa Barat 45311</p>
+                </div>
+                <div class="flex flex-col gap-2 flex-1">
+                    <h3 class="text-xl font-semibold leading-6 text-white">Hubungi Kami</h3>
+                    <a href="mailto:binakonstruksisumedang@gmail.com"
+                        class="flex flex-row text-gray-400 space-x-2 hover:text-gray-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                            <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <style>
+                                svg {
+                                    fill: #ffffff
+                                }
+                            </style>
+                            <path
+                                d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+                        </svg>
+                        <span class="text-sm text-white">binakonstruksisumedang@gmail.com</span>
+                    </a>
+                    <a href="tel:(0261)201240" class="flex flex-row space-x-2 text-gray-400 hover:text-gray-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                            <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <style>
+                                svg {
+                                    fill: #ffffff
+                                }
+                            </style>
+                            <path
+                                d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
+                        </svg>
+                        <span class="text-sm text-white">(0261)201240</span>
+                    </a>
+                </div>
+                <div class="flex flex-col gap-2 flex-1">
+                    <h3 class="text-xl font-semibold leading-6 text-white">Link Terkait</h3>
+                    <ul role="list" class="space-y-1">
+                        <li>
+                            <a href="https://dpupr.sumedangkab.go.id/" target="_blank"
+                                class="text-sm text-gray-200 hover:text-white">Web
+                                Dinas PUTR
+                                Kabupaten Sumedang</a>
+                        </li>
+                        <li>
+                            <a href="https://sumedangkab.go.id/" target="_blank"
+                                class="text-sm text-gray-200 hover:text-white">Website
+                                Pemerintah Kab. Sumedang</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-200/10 py-4 mt-4">
+            <p class="text-sm leading-5 text-gray-300 text-center">&copy; 2023 SIAP TAMPIL (Sistem Informasi
+                Pelayanan Tenaga
+                Terampil Konstruksi). All rights reserved.</p>
+        </div>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            if (menu.classList.contains("hidden")) {
+                menu.classList.remove("hidden");
+            } else {
+                menu.classList.add("hidden");
+            }
+        }
+
+        // Fungsi untuk menyembunyikan menu ketika mengklik atau fokus di luar menu
+        document.addEventListener("click", function (event) {
+            var nav = document.getElementById("nav");
+            var targetElement = event.target;
+
+            // Periksa apakah targetElement berada di dalam menu atau tidak
+            var isClickInsideMenu = nav.contains(targetElement);
+
+            // Jika tidak, maka sembunyikan menu
+            if (!isClickInsideMenu) {
+                menu.classList.add("hidden");
+            }
+        });
+
+        function switchActiveMenu(currentMenu) {
+            var menu = document.getElementsByClassName("menu");
+            for (var i = 0; i < menu.length; i++) {
+                menu[i].classList.remove("active");
+            }
+            currentMenu.classList.add("active");
+
+            var nav = document.getElementById("menu");
+            nav.classList.add("hidden");
+        }
+    </script>
+</body>
+
+</html>
