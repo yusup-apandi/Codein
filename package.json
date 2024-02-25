@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "build": " npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/main.css --watch"
+        "dev": " npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/main.css --watch"
     },
     "devDependencies": {
         "@tailwindcss/aspect-ratio": "^0.4.2",

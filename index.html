@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SIAP TAMPIL</title>
+    <title>Code In Aja</title>
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,14 +14,19 @@
 </head>
 
 <body class="relative overflow-x-hidden">
-    <nav class="fixed top-0 z-20 w-screen bg-white shadow" id="nav">
+    <nav class="navbar" id="nav">
         <div class="px-4 py-3  md:px-[24px] lg:px-[120px] flex justify-between items-center">
             <!-- Brand (Logo) -->
-            <a class="items-center flex-1" href="/index.html">
-                <img src="assets/static/img/logo.svg" alt="Logo" class="w-auto h-16 mr-2">
+            <a class="items-center" href="/index.html">
+                <img src="assets/static/img/logo.svg" alt="Logo" class="w-auto h-8 mr-2">
             </a>
-            <!-- Toggler untuk menu responsif -->
-            <div class="md:hidden">
+            <!-- Toggler menu responsif -->
+            <div class="md:hidden flex gap-4">
+                <a href="#">
+                    <button type="button" class="btn-primary">
+                        Daftar
+                    </button>
+                </a>
                 <button type="button" class="text-gray-600 focus:outline-none" data-target="#menu"
                     onclick="toggleMenu()">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -35,349 +40,483 @@
             </div>
 
             <div class="hidden md:flex md:items-center md:space-x-4">
-                <a href="index.html" class="block mt-4 nav_active md:inline-block md:mt-0 text-primary-800 menu hover:bg-primary-50
-                    rounded-lg px-3 py-2">Beranda</a>
-                <a href="informasi.html"
-                    class="block mt-4 md:inline-block md:mt-0  text-primary-800 menu hover:bg-primary-50 rounded-lg px-3 py-2">Informasi
-                    Pelatihan</a>
+                <a href="index.html" class="nav  ">Beranda</a>
+                <a href="e-book.html" class="nav">
+                    E-Book</a>
+                <a href="tutorial.html" class="nav">
+                    Tutorial</a>
+                <a href="artikel.html" class="nav">
+                    Artikel</a>
             </div>
-            <div class="hidden md:flex md:items-center md:ml-3">
-                <a href="pelatihan.html">
-                    <button type="button"
-                        class="w-full px-4 py-2 text-sm font-bold text-center text-white rounded-lg hover:bg-primary-700 bg-primary-500">
-                        Pengajuan Pelatihan
+
+            <div class="hidden md:flex md:items-center md:ml-3 md:gap-4">
+                <a href="#">
+                    <button type="button" class="btn-text">
+                        Masuk
+                    </button>
+                </a>
+                <a href="#">
+                    <button type="button" class="btn-primary">
+                        Daftar
                     </button>
                 </a>
             </div>
         </div>
         <div class="hidden px-4 pb-4 space-y-2 md:hidden md:items-center" id="menu">
-            <a href="index.html" class="block nav_active md:inline-block md:mt-0 text-primary-800 menu hover:bg-primary-50 rounded-lg
-                px-3 py-2">Beranda</a>
-            <a href="informasi.html"
-                class="block md:inline-block md:mt-0 text-primary-800 menu hover:bg-primary-50 rounded-lg px-3 py-2">Informasi
-                Pelatihan</a>
+            <a href="index.html" class="nav  ">Beranda</a>
+            <a href="e-book.html" class="nav">
+                E-Book</a>
+            <a href="tutorial.html" class="nav">
+                Tutorial</a>
+            <a href="artikel.html" class="nav">
+                Artikel</a>
+
             <a href="#">
-                <button type="button"
-                    class="w-full mt-2 px-4 py-2 text-sm font-bold text-center text-white rounded-lg hover:bg-primary-700 bg-primary-500">
-                    Pengajuan Pelatihan
-                </button>
-            </a>
-            <a href="#">
-                <button type="button"
-                    class="w-full mt-2 px-4 py-2 text-sm font-bold text-center text-white rounded-lg hover:bg-primary-700 bg-primary-500">
-                    Pengajuan Pelatihan
+                <button type="button" class="btn-primary  mt-4">
+                    Daftar
                 </button>
             </a>
         </div>
     </nav>
+    <main class="mt-16 sm:mt-8 pt-12">
+        <section id="home" class="w-full h-dvh px-4 md:px-6 lg:px-32 ">
+            <div class="isolate bg-white">
+                <div
+                    class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
+                    <svg class="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]"
+                        viewBox="0 0 1155 678">
+                        <path fill="url(#9b2541ea-d39d-499b-bd42-aeea3e93f5ff)" fill-opacity=".3"
+                            d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z" />
+                        <defs>
+                            <linearGradient id="9b2541ea-d39d-499b-bd42-aeea3e93f5ff" x1="1155.49" x2="-78.208"
+                                y1=".177" y2="474.645" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#83EEC0"></stop>
+                                <stop offset="1" stop-color="#5473E9"></stop>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
 
+                <div class="relative py-24 sm:py-32 lg:pb-40">
+                    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                        <div class="mx-auto max-w-2xl text-center">
+                            <h1 class="text-4xl font-bold text-primary-800 sm:text-5xl">Kembangkan Potensi
+                                Kamu!</h1>
+                            <p class="mt-6 text-lg  text-gray-600">Temukan beragam kemudahan mendapatkan real
+                                study case dari mentor kami!</p>
+                            <div class="mt-10 flex items-center justify-center gap-x-6">
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="btn-primary">Gabung
+                                    Sekarang</a>
+                            </div>
+                            <div class="flex">
 
-    <main class="mt-16 sm:mt-8">
-        <section id="terampil" class="w-full px-[16px] md:px-[24px] lg:px-[120px] pt-12  md:pt-[86px] pb-12">
-            <div class="flex flex-col space-y-2">
-                <h2 class="text-3xl font-semibold text-primary-900">Layanan Yang Tersedia</h2>
-                <p class="text-xl text-gray-500 ">Kini lebih mudah akses layanan data konstruksi</p>
-            </div>
-            <div
-                class="mx-auto grid gap-y-6 p-6 sm:grid-cols-2 sm:gap-8 sm:py-8 lg:grid-cols-5 lg:px-8 lg:py-12 xl:py-16">
-                <a href="izin-usaha.html"
-                    class="-m-3 flex flex-col justify-between rounded-lg p-3 transition duration-150 ease-in-out hover:bg-gray-50">
-                    <div class="flex md:h-full lg:flex-col">
-                        <div class="flex-shrink-0">
+                            </div>
+                        </div>
+                        <div class="mt-16 flow-root sm:mt-24">
                             <div
-                                class="inline-flex h-10 w-10 items-center justify-center rounded-md text-white sm:h-28 sm:w-28">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="112" height="112" viewBox="0 0 72 72"
-                                    fill="none">
-                                    <circle cx="36" cy="36" r="31.0345" fill="#030F6B" />
-                                    <path
-                                        d="M32.8391 20H39.7586C40.6762 20 41.5562 20.3645 42.205 21.0133C42.8539 21.6622 43.2184 22.5422 43.2184 23.4598V26.9195H50.1379C51.0555 26.9195 51.9355 27.2841 52.5844 27.9329C53.2332 28.5817 53.5977 29.4617 53.5977 30.3793V49.408C53.5977 50.3256 53.2332 51.2056 52.5844 51.8545C51.9355 52.5033 51.0555 52.8678 50.1379 52.8678H22.4598C21.5422 52.8678 20.6622 52.5033 20.0133 51.8545C19.3645 51.2056 19 50.3256 19 49.408V30.3793C19 29.4617 19.3645 28.5817 20.0133 27.9329C20.6622 27.2841 21.5422 26.9195 22.4598 26.9195H29.3793V23.4598C29.3793 22.5422 29.7438 21.6622 30.3927 21.0133C31.0415 20.3645 31.9215 20 32.8391 20ZM39.7586 26.9195V23.4598H32.8391V26.9195H39.7586ZM33.704 46.8132L45.104 35.4133L42.6648 32.9741L33.704 41.9176L30.0886 38.3195L27.6494 40.7586L33.704 46.8132Z"
-                                        fill="#EFB803" />
-                                </svg>
+                                class="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
+
                             </div>
-                        </div>
-                        <div class="ml-4 md:flex md:flex-1 md:flex-col md:justify-between lg:ml-0 lg:mt-4">
-                            <div>
-                                <p class="text-base font-medium text-primary-900">Izin Usaha Nasional</p>
-                                <p class="mt-1 text-sm text-gray-500">Temukan data izin usaha nasional konstruksi
-                                    yang terdaftar di SIMJAKON PUTR Kabupaten Sumedang</p>
-                            </div>
-                            <p class="mt-2 text-sm font-medium text-primary-600 lg:mt-4">
-                                Lihat
-                                <span aria-hidden="true"> &rarr;</span>
-                            </p>
                         </div>
                     </div>
-                </a>
-                <a href="/regulasi.html"
-                    class="-m-3 flex flex-col justify-between rounded-lg p-3 transition duration-150 ease-in-out hover:bg-gray-50">
-                    <div class="flex md:h-full lg:flex-col">
-                        <div class="flex-shrink-0">
-                            <div class="inline-flex h-10 w-10 items-center justify-center rounded-md text-white sm:h-28
-                                sm:w-28">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="112" height="112" viewBox="0 0 58 58"
-                                    fill="none">
-                                    <circle cx="29" cy="29" r="25" fill="#030F6B" />
-                                    <path
-                                        d="M38.9833 30.05L32.3333 36.7H29.65V34.0167L36.3 27.3667L38.9833 30.05ZM42.95 29.1167C42.95 29.4667 42.6 29.8167 42.25 30.1667L39.3333 33.0833L38.2833 32.0333L41.3167 29L40.6167 28.3L39.8 29.1167L37.1167 26.4333L39.6833 23.9833C39.9167 23.75 40.3833 23.75 40.7333 23.9833L42.3667 25.6167C42.6 25.85 42.6 26.3167 42.3667 26.6667C42.1333 26.9 41.9 27.1333 41.9 27.3667C41.9 27.6 42.1333 27.8333 42.3667 28.0667C42.7167 28.4167 43.0667 28.7667 42.95 29.1167ZM19.5 38.3333V19.6667H27.6667V25.5H33.5V27.25L35.8333 24.9167V24.3333L28.8333 17.3333H19.5C18.2167 17.3333 17.1667 18.3833 17.1667 19.6667V38.3333C17.1667 39.6167 18.2167 40.6667 19.5 40.6667H33.5C34.7833 40.6667 35.8333 39.6167 35.8333 38.3333H19.5ZM28.8333 34.95C28.6 34.95 28.3667 35.0667 28.25 35.0667L27.6667 32.5H25.9167L23.4667 34.4833L24.1667 31.3333H22.4167L21.25 37.1667H23L26.3833 34.1333L27.0833 36.8167H28.25L28.8333 36.7V34.95Z"
-                                        fill="#EFB803" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="ml-4 md:flex md:flex-1 md:flex-col md:justify-between lg:ml-0 lg:mt-4">
-                            <div>
-                                <p class="text-base font-medium text-primary-900">Regulasi</p>
-                                <p class="mt-1 text-sm text-gray-500">Temukan data regulasi di SIMJAKON PUTR
-                                    Kabupaten
-                                    Sumedang</p>
-                            </div>
-                            <p class="mt-2 text-sm font-medium text-primary-600 lg:mt-4">
-                                Lihat
-                                <span aria-hidden="true"> &rarr;</span>
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="#"
-                    class="-m-3 flex flex-col justify-between rounded-lg p-3 transition duration-150 ease-in-out hover:bg-gray-50">
-                    <div class="flex md:h-full lg:flex-col">
-                        <div class="flex-shrink-0">
-                            <div
-                                class="inline-flex h-10 w-10 items-center justify-center rounded-md text-white sm:h-28 sm:w-28">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="112" height="112" viewBox="0 0 58 58"
-                                    fill="none">
-                                    <circle cx="29" cy="29" r="25" fill="#030F6B" />
-                                    <path
-                                        d="M29 32.5C23.8433 32.5 19.6667 34.5883 19.6667 37.1667V39.5H38.3333V37.1667C38.3333 34.5883 34.1567 32.5 29 32.5ZM24.3333 25.5C24.3333 26.7377 24.825 27.9247 25.7002 28.7998C26.5753 29.675 27.7623 30.1667 29 30.1667C30.2377 30.1667 31.4247 29.675 32.2998 28.7998C33.175 27.9247 33.6667 26.7377 33.6667 25.5M28.4167 17.3333C28.0667 17.3333 27.8333 17.5783 27.8333 17.9167V21.4167H26.6667V18.5C26.6667 18.5 24.0417 19.5033 24.0417 22.875C24.0417 22.875 23.1667 23.0383 23.1667 24.3333H34.8333C34.775 23.0383 33.9583 22.875 33.9583 22.875C33.9583 19.5033 31.3333 18.5 31.3333 18.5V21.4167H30.1667V17.9167C30.1667 17.5783 29.945 17.3333 29.5833 17.3333H28.4167Z"
-                                        fill="#EFB803" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="ml-4 md:flex md:flex-1 md:flex-col md:justify-between lg:ml-0 lg:mt-4">
-                            <div>
-                                <p class="text-base font-medium text-primary-900">PJTBU</p>
-                                <p class="mt-1 text-sm text-gray-500">Temukan data PJTBU yang terdaftar di SIMJAKON
-                                    PUTR Kabupaten Sumedang</p>
-                            </div>
-                            <p class="mt-2 text-sm font-medium text-primary-600 lg:mt-4">
-                                Lihat
-                                <span aria-hidden="true"> &rarr;</span>
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="pjskbu.html"
-                    class="-m-3 flex flex-col justify-between rounded-lg p-3 transition duration-150 ease-in-out hover:bg-gray-50">
-                    <div class="flex md:h-full lg:flex-col">
-                        <div class="flex-shrink-0">
-                            <div
-                                class="inline-flex h-10 w-10 items-center justify-center rounded-md text-white sm:h-28 sm:w-28">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="112" height="112" viewBox="0 0 58 58"
-                                    fill="none">
-                                    <circle cx="29" cy="29" r="25" fill="#030F6B" />
-                                    <path
-                                        d="M29 18.5C31.5783 18.5 33.6667 20.5883 33.6667 23.1667C33.6667 25.745 31.5783 27.8333 29 27.8333C26.4217 27.8333 24.3333 25.745 24.3333 23.1667C24.3333 20.5883 26.4217 18.5 29 18.5ZM33.6667 30.7967C33.6667 32.0333 33.34 34.915 31.1117 38.135L30.1667 32.5L31.2633 30.3067C30.54 30.225 29.7817 30.1667 29 30.1667C28.2183 30.1667 27.46 30.225 26.7367 30.3067L27.8333 32.5L26.8883 38.135C24.66 34.915 24.3333 32.0333 24.3333 30.7967C21.545 31.6133 19.6667 33.0833 19.6667 34.8333V39.5H38.3333V34.8333C38.3333 33.0833 36.4667 31.6133 33.6667 30.7967Z"
-                                        fill="#EFB803" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="ml-4 md:flex md:flex-1 md:flex-col md:justify-between lg:ml-0 lg:mt-4">
-                            <div>
-                                <p class="text-base font-medium text-primary-900">PJSKBU</p>
-                                <p class="mt-1 text-sm text-gray-500">Temukan data PJSKBU yang terdaftar di SIMJAKON
-                                    PUTR Kabupaten Sumedang</p>
-                            </div>
-                            <p class="mt-2 text-sm font-medium text-primary-600 lg:mt-4">
-                                Lihat
-                                <span aria-hidden="true"> &rarr;</span>
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="pjskbu.html"
-                    class="-m-3 flex flex-col justify-between rounded-lg p-3 transition duration-150 ease-in-out hover:bg-gray-50">
-                    <div class="flex md:h-full lg:flex-col">
-                        <div class="flex-shrink-0">
-                            <div
-                                class="inline-flex h-10 w-10 items-center justify-center rounded-md text-white sm:h-28 sm:w-28">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="112" height="112" viewBox="0 0 72 72"
-                                    fill="none">
-                                    <circle cx="36" cy="36" r="31.0345" fill="#030F6B" />
-                                    <path
-                                        d="M36 40.3448C29.5986 40.3448 24.4138 42.9372 24.4138 46.1379V49.0345H47.5862V46.1379C47.5862 42.9372 42.4014 40.3448 36 40.3448ZM30.2069 31.6552C30.2069 33.1916 30.8172 34.6651 31.9037 35.7515C32.9901 36.8379 34.4636 37.4483 36 37.4483C37.5364 37.4483 39.0099 36.8379 40.0963 35.7515C41.1828 34.6651 41.7931 33.1916 41.7931 31.6552M35.2759 21.5172C34.8414 21.5172 34.5517 21.8214 34.5517 22.2414V26.5862H33.1034V22.9655C33.1034 22.9655 29.8448 24.211 29.8448 28.3966C29.8448 28.3966 28.7586 28.5993 28.7586 30.2069H43.2414C43.169 28.5993 42.1552 28.3966 42.1552 28.3966C42.1552 24.211 38.8965 22.9655 38.8965 22.9655V26.5862H37.4483V22.2414C37.4483 21.8214 37.1731 21.5172 36.7241 21.5172H35.2759Z"
-                                        fill="#EFB803" />
-                                    <path
-                                        d="M45.6385 38.7198C45.544 38.8051 45.4449 38.885 45.3415 38.9592C45.1627 39.0792 44.9617 39.162 44.7505 39.204C44.6587 39.222 44.5627 39.2298 44.3713 39.2448C43.8907 39.2832 43.6501 39.3024 43.4497 39.3732C43.2206 39.4541 43.0125 39.5853 42.8406 39.7572C42.6688 39.929 42.5376 40.1371 42.4567 40.3662C42.3859 40.5666 42.3667 40.8072 42.3283 41.2878C42.3218 41.4149 42.3081 41.5415 42.2875 41.667C42.2455 41.8782 42.1627 42.0792 42.0427 42.258C41.9905 42.336 41.9281 42.4092 41.8033 42.555C41.4907 42.9222 41.3341 43.1058 41.2423 43.2978C41.0305 43.7418 41.0305 44.2578 41.2423 44.7018C41.3341 44.8938 41.4907 45.0774 41.8033 45.4446C41.9281 45.5904 41.9905 45.6636 42.0427 45.7416C42.1627 45.9204 42.2455 46.1214 42.2875 46.3326C42.3055 46.4244 42.3133 46.5204 42.3283 46.7118C42.3667 47.1924 42.3859 47.433 42.4567 47.6334C42.5376 47.8626 42.6688 48.0707 42.8406 48.2425C43.0125 48.4144 43.2206 48.5455 43.4497 48.6264C43.6501 48.6972 43.8907 48.7164 44.3713 48.7548C44.5627 48.7698 44.6587 48.7776 44.7505 48.7956C44.9617 48.8376 45.1627 48.921 45.3415 49.0404C45.4195 49.0926 45.4927 49.155 45.6385 49.2798C46.0057 49.5924 46.1893 49.749 46.3813 49.8408C46.8253 50.0526 47.3413 50.0526 47.7853 49.8408C47.9773 49.749 48.1609 49.5924 48.5281 49.2798C48.6739 49.155 48.7471 49.0926 48.8251 49.0404C49.0039 48.9204 49.2049 48.8376 49.4161 48.7956C49.5079 48.7776 49.6039 48.7698 49.7953 48.7548C50.2759 48.7164 50.5165 48.6972 50.7169 48.6264C50.9461 48.5455 51.1542 48.4144 51.326 48.2425C51.4978 48.0707 51.629 47.8626 51.7099 47.6334C51.7807 47.433 51.7999 47.1924 51.8383 46.7118C51.8533 46.5204 51.8611 46.4244 51.8791 46.3326C51.9211 46.1214 52.0045 45.9204 52.1239 45.7416C52.1761 45.6636 52.2385 45.5904 52.3633 45.4446C52.6759 45.0774 52.8325 44.8938 52.9243 44.7018C53.1361 44.2578 53.1361 43.7418 52.9243 43.2978C52.8325 43.1058 52.6759 42.9222 52.3633 42.555C52.2779 42.4607 52.198 42.3615 52.1239 42.258C52.004 42.0792 51.9208 41.8783 51.8791 41.667C51.8585 41.5415 51.8449 41.4149 51.8383 41.2878C51.7999 40.8072 51.7807 40.5666 51.7099 40.3662C51.629 40.1371 51.4978 39.929 51.326 39.7572C51.1542 39.5853 50.9461 39.4541 50.7169 39.3732C50.5165 39.3024 50.2759 39.2832 49.7953 39.2448C49.6683 39.2383 49.5417 39.2247 49.4161 39.204C49.2049 39.1623 49.004 39.0791 48.8251 38.9592C48.7218 38.885 48.6226 38.8051 48.5281 38.7198C48.1609 38.4072 47.9773 38.2506 47.7853 38.1588C47.5661 38.0541 47.3263 37.9997 47.0833 37.9997C46.8404 37.9997 46.6005 38.0541 46.3813 38.1588C46.1893 38.2506 46.0057 38.4072 45.6385 38.7198Z"
-                                        fill="white" />
-                                    <path
-                                        d="M49.715 43.0616C49.8042 42.9812 49.8536 42.8733 49.8525 42.7614C49.8514 42.6495 49.7999 42.5425 49.7091 42.4633C49.6183 42.3842 49.4954 42.3393 49.3669 42.3383C49.2385 42.3374 49.1148 42.3804 49.0224 42.4582L46.104 45.001L45.1442 44.1648C45.0519 44.087 44.9281 44.0439 44.7997 44.0449C44.6712 44.0459 44.5484 44.0908 44.4575 44.1699C44.3667 44.249 44.3152 44.3561 44.3141 44.468C44.313 44.5799 44.3624 44.6877 44.4517 44.7682L45.7574 45.9059C45.8492 45.9858 45.9737 46.0306 46.1034 46.0306C46.2331 46.0306 46.3576 45.9858 46.4494 45.9059L49.715 43.0616Z"
-                                        fill="#EFB803" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="ml-4 md:flex md:flex-1 md:flex-col md:justify-between lg:ml-0 lg:mt-4">
-                            <div>
-                                <p class="text-base font-medium text-primary-900">Tenaga Terampil Konstruksi</p>
-                                <p class="mt-1 text-sm text-gray-500">Temukan data Tenaga Terampil Konstruksi yang
-                                    terdaftar di SIMJAKON
-                                    PUTR Kabupaten Sumedang</p>
-                            </div>
-                            <p class="mt-2 text-sm font-medium text-primary-600 lg:mt-4">
-                                Lihat
-                                <span aria-hidden="true"> &rarr;</span>
-                            </p>
-                        </div>
-                    </div>
-                </a>
+                </div>
             </div>
         </section>
-        <section id="Informasi" class="w-full px-[16px] md:px-[24px] lg:px-[120px] py-20 bg-gray-50">
-            <div class="flex flex-col space-y-2">
-                <h2 class="text-3xl font-semibold text-primary-900">Informasi Pelatihan dan Uji Kompetensi</h2>
-                <p class="text-xl text-gray-500 ">Update informasi terkait pelatihan dan uji kompetensi</p>
+        <section id="product" class="w-full bg-white px-4 md:px-6 lg:px-40 py-20">
+            <div class="flex flex-col space-y-2 items-center mb-12">
+                <h2 class="text-4xl font-semibold text-primary-900 text-center">Asah Potensimu Dengan
+                    Layanan Kami</h2>
+                <p class="text-2xl text-gray-500 ">Jelajahi produk kami</p>
+            </div>
+            <div class="flex flex-col gap-8">
+                <!-- Column 1 -->
+                <div class="flex flex-col lg:flex-row gap-8">
+                    <!-- Card 1 -->
+                    <div class="flex flex-1 flex-col p-8 rounded-3xl bg-secondary-50">
+                        <div class="flex flex-col gap-3">
+                            <span class="badge-text">E-Book</span>
+                            <div class="flex flex-col  gap-2">
+                                <h2 class="text-3xl font-semibold text-primary-800">Mencari Buku Panduan?</h2>
+                                <p class="text-xl font-medium text-gray-600">Dapatkan pengetahuan dari real study case!
+                                </p>
+                            </div>
+                            <a href="#" class="btn-text">Lihat E-Book <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" viewBox="0 0 16 16" fill="">
+                                    <path
+                                        d="M14.0306 8.53061L9.53063 13.0306C9.38973 13.1715 9.19863 13.2507 8.99938 13.2507C8.80012 13.2507 8.60902 13.1715 8.46813 13.0306C8.32723 12.8897 8.24807 12.6986 8.24807 12.4994C8.24807 12.3001 8.32723 12.109 8.46813 11.9681L11.6875 8.74999H2.5C2.30109 8.74999 2.11032 8.67097 1.96967 8.53032C1.82902 8.38967 1.75 8.1989 1.75 7.99999C1.75 7.80108 1.82902 7.61031 1.96967 7.46966C2.11032 7.329 2.30109 7.24999 2.5 7.24999H11.6875L8.46937 4.02999C8.32848 3.88909 8.24932 3.69799 8.24932 3.49874C8.24932 3.29948 8.32848 3.10838 8.46937 2.96749C8.61027 2.82659 8.80137 2.74744 9.00062 2.74744C9.19988 2.74744 9.39098 2.82659 9.53187 2.96749L14.0319 7.46749C14.1018 7.53726 14.1573 7.62016 14.1951 7.71142C14.2329 7.80269 14.2523 7.90052 14.2522 7.99931C14.252 8.09809 14.2324 8.19588 14.1944 8.28706C14.1564 8.37824 14.1007 8.46101 14.0306 8.53061Z"
+                                        fill="#343330" />
+                                </svg></a>
+                        </div>
+                        <img src="" alt="" srcset="">
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="flex flex-col p-8 rounded-3xl">
+                        <div class="flex flex-col gap-3">
+                            <span class="badge-text">Tutorial</span>
+                            <div class="flex flex-col  gap-2">
+                                <h2 class="text-3xl font-semibold text-primary-800">Dapatkan tutorial lengkap?</h2>
+                                <p class="text-xl font-medium text-gray-600">Semuanya dijelasin!
+                                </p>
+                            </div>
+                            <a href="#" class="btn-text">Lihat Tutorial <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" viewBox="0 0 16 16" fill="">
+                                    <path
+                                        d="M14.0306 8.53061L9.53063 13.0306C9.38973 13.1715 9.19863 13.2507 8.99938 13.2507C8.80012 13.2507 8.60902 13.1715 8.46813 13.0306C8.32723 12.8897 8.24807 12.6986 8.24807 12.4994C8.24807 12.3001 8.32723 12.109 8.46813 11.9681L11.6875 8.74999H2.5C2.30109 8.74999 2.11032 8.67097 1.96967 8.53032C1.82902 8.38967 1.75 8.1989 1.75 7.99999C1.75 7.80108 1.82902 7.61031 1.96967 7.46966C2.11032 7.329 2.30109 7.24999 2.5 7.24999H11.6875L8.46937 4.02999C8.32848 3.88909 8.24932 3.69799 8.24932 3.49874C8.24932 3.29948 8.32848 3.10838 8.46937 2.96749C8.61027 2.82659 8.80137 2.74744 9.00062 2.74744C9.19988 2.74744 9.39098 2.82659 9.53187 2.96749L14.0319 7.46749C14.1018 7.53726 14.1573 7.62016 14.1951 7.71142C14.2329 7.80269 14.2523 7.90052 14.2522 7.99931C14.252 8.09809 14.2324 8.19588 14.1944 8.28706C14.1564 8.37824 14.1007 8.46101 14.0306 8.53061Z"
+                                        fill="#343330" />
+                                </svg></a>
+                        </div>
+                        <img src="" alt="" srcset="">
+                    </div>
+                </div>
+                <!-- Column 2 -->
+                <div class="flex flex-col lg:flex-row  gap-8">
+                    <!-- Card 1 -->
+                    <div class="flex flex-1 flex-col p-8 rounded-3xl bg-gray-50">
+                        <div class="flex flex-col gap-3">
+                            <span class="badge-text">Artikel</span>
+                            <div class="flex flex-col gap-2">
+                                <h2 class="text-3xl font-semibold text-primary-800">Lagi cari informasi teknologi?</h2>
+                                <p class="text-xl font-medium text-gray-600">Semuanya lengkap disini
+                                </p>
+                            </div>
+                            <a href="#" class="btn-text">Lihat Artikel <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path
+                                        d="M14.0306 8.53061L9.53063 13.0306C9.38973 13.1715 9.19863 13.2507 8.99938 13.2507C8.80012 13.2507 8.60902 13.1715 8.46813 13.0306C8.32723 12.8897 8.24807 12.6986 8.24807 12.4994C8.24807 12.3001 8.32723 12.109 8.46813 11.9681L11.6875 8.74999H2.5C2.30109 8.74999 2.11032 8.67097 1.96967 8.53032C1.82902 8.38967 1.75 8.1989 1.75 7.99999C1.75 7.80108 1.82902 7.61031 1.96967 7.46966C2.11032 7.329 2.30109 7.24999 2.5 7.24999H11.6875L8.46937 4.02999C8.32848 3.88909 8.24932 3.69799 8.24932 3.49874C8.24932 3.29948 8.32848 3.10838 8.46937 2.96749C8.61027 2.82659 8.80137 2.74744 9.00062 2.74744C9.19988 2.74744 9.39098 2.82659 9.53187 2.96749L14.0319 7.46749C14.1018 7.53726 14.1573 7.62016 14.1951 7.71142C14.2329 7.80269 14.2523 7.90052 14.2522 7.99931C14.252 8.09809 14.2324 8.19588 14.1944 8.28706C14.1564 8.37824 14.1007 8.46101 14.0306 8.53061Z"
+                                        fill="#343330" />
+                                </svg></a>
+                        </div>
+                        <img src="" alt="" srcset="">
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <!-- Card 2 -->
+                        <div class="flex flex-col gap-3 bg-slate-50 p-8 rounded-3xl">
+                            <div class="flex gap-2">
+                                <span class="badge-text">Online Class</span>
+                                <span class="badge-gray">Comming Soon</span>
+                            </div>
+                            <div class="flex flex-col">
+                                <h2 class="text-3xl font-semibold text-primary-800">Siap Bertemu Mentor?</h2>
+                                <p class="text-xl font-medium text-gray-600">Belajar bareng mentor berpengalaman, biar
+                                    gak salah arah!</p>
+                            </div>
+                            <img src="assets/static/img/img-class.png" alt="" srcset="">
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="flex flex-wrap justify-between items-center bg-primary-50 rounded-xl p-8">
+                            <h2 class="text-2xl font-semibold text-primary-800">Asah potensimu bareng <br>CodeInAja</h2>
+                            <a href=" #" class="btn-primary">Daftar CodeInAja</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="why" class="w-full bg-gray-50 px-4 md:px-6 lg:px-40 py-20">
+            <div class="flex flex-col lg:flex-row  gap-8 items-center">
+                <img src="assets/static/img/study-case.png" alt="" srcset="">
+                <div class="flex flex-col w-full gap-6">
+                    <div class="flex flex-col ">
+                        <div class="flex flex-col space-y-2 mb-12">
+                            <h2 class="text-4xl font-semibold text-primary-900">Real Study Case & Update Materi</h2>
+                            <p class="text-2xl text-gray-500 ">Biar kamu tambah paham!</p>
+                        </div>
+
+                        <div class="flex  flex-col gap-4">
+                            <div class="flex items-start gap-4"><svg width="48" height="48" viewBox="0 0 40 40"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_2889_1091)">
+                                        <path
+                                            d="M12.0131 0.90918H36.8062C37.1714 0.90918 37.5218 1.0543 37.7801 1.31261C38.0384 1.57093 38.1835 1.92127 38.1835 2.28657V28.4571C38.1835 29.553 37.7482 30.6041 36.9733 31.379C36.1983 32.1539 35.1473 32.5893 34.0513 32.5893H14.7678C13.6719 32.5893 12.6209 32.1539 11.8459 31.379C11.071 30.6041 10.6356 29.553 10.6356 28.4571V2.28657C10.6356 1.92127 10.7807 1.57093 11.0391 1.31261C11.2973 1.0543 11.6477 0.90918 12.0131 0.90918Z"
+                                            stroke="#13322E" stroke-width="1.81818" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M16.2038 9.64014H32.6162" stroke="#13322E" stroke-width="1.81818"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M16.2038 14.4622H32.6162" stroke="#13322E" stroke-width="1.81818"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M16.2038 19.2842H32.6162" stroke="#13322E" stroke-width="1.81818"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M16.9038 29.7605V37.7182C16.9038 38.394 16.1926 38.8336 15.5883 38.5314L11.652 36.5637C11.3961 36.4358 11.0948 36.4358 10.8389 36.5638L6.9052 38.531C6.30073 38.8333 5.58948 38.3938 5.58948 37.718V29.7616"
+                                            fill="#33CA66" />
+                                        <path
+                                            d="M11.2468 31.6461C16.4541 31.6461 20.6754 27.4247 20.6754 22.2175C20.6754 17.0102 16.4541 12.7888 11.2468 12.7888C6.0395 12.7888 1.81818 17.0102 1.81818 22.2175C1.81818 27.4247 6.0395 31.6461 11.2468 31.6461Z"
+                                            fill="white" stroke="#13322E" stroke-width="1.81818" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M11.2466 27.8746C14.371 27.8746 16.9038 25.3418 16.9038 22.2175C16.9038 19.0931 14.371 16.5603 11.2466 16.5603C8.12227 16.5603 5.58948 19.0931 5.58948 22.2175C5.58948 25.3418 8.12227 27.8746 11.2466 27.8746Z"
+                                            fill="#33CA67" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_2889_1091">
+                                            <rect width="38.1818" height="40" fill="white"
+                                                transform="translate(0.909088)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <div class="flex flex-col gap-2">
+                                    <h2 class="text-3xl font-semibold text-gray-800">Guaranteed Result</h2>
+                                    <p class="text-xl text-gray-600">Disini kamu bakalan dapatet</p>
+                                </div>
+
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <svg width="48" height="48" viewBox="0 0 38 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.6079 24.2214C18.7833 23.9203 19.2182 23.9203 19.3935 24.2213L21.5325 27.8939C21.5968 28.0042 21.7044 28.0823 21.8291 28.1093L25.9829 29.0089C26.3234 29.0826 26.4578 29.4962 26.2256 29.756L23.3939 32.9252C23.3088 33.0203 23.2677 33.1469 23.2806 33.2739L23.7087 37.5023C23.7438 37.8489 23.392 38.1045 23.0732 37.9641L19.184 36.2502C19.0673 36.1987 18.9342 36.1987 18.8175 36.2502L14.9283 37.9641C14.6095 38.1045 14.2576 37.8489 14.2927 37.5023L14.7208 33.2739C14.7337 33.1469 14.6926 33.0203 14.6075 32.9253L11.7758 29.756C11.5436 29.4962 11.6781 29.0826 12.0185 29.0089L16.1724 28.1093C16.297 28.0823 16.4046 28.0042 16.4689 27.8939L18.6079 24.2214Z"
+                                        fill="#33CA66" />
+                                    <path
+                                        d="M6.28683 23.1492C6.46216 22.8481 6.89705 22.8481 7.07238 23.1492L8.47368 25.555C8.53792 25.6652 8.64554 25.7435 8.77026 25.7705L11.4914 26.3597C11.8319 26.4335 11.9663 26.8471 11.7342 27.1069L9.87906 29.1831C9.79404 29.2782 9.75293 29.4047 9.76578 29.5317L10.0463 32.3018C10.0814 32.6483 9.72952 32.904 9.41073 32.7635L6.8629 31.6408C6.74612 31.5893 6.61309 31.5893 6.49631 31.6408L3.94848 32.7635C3.62969 32.904 3.27786 32.6483 3.31295 32.3018L3.59342 29.5317C3.60628 29.4047 3.56517 29.2782 3.48014 29.1831L1.62503 27.1069C1.39291 26.8471 1.5273 26.4335 1.86778 26.3597L4.58894 25.7705C4.71366 25.7435 4.82129 25.6652 4.88552 25.555L6.28683 23.1492Z"
+                                        fill="#33CA67" />
+                                    <path
+                                        d="M30.9282 23.1492C31.1035 22.8481 31.5383 22.8481 31.7137 23.1492L33.115 25.555C33.1793 25.6652 33.2869 25.7435 33.4116 25.7705L36.1328 26.3597C36.4733 26.4335 36.6076 26.8471 36.3755 27.1069L34.5204 29.1831C34.4353 29.2782 34.3943 29.4047 34.4071 29.5317L34.6876 32.3018C34.7227 32.6483 34.3708 32.904 34.0521 32.7635L31.5043 31.6408C31.3874 31.5893 31.2544 31.5893 31.1376 31.6408L28.5898 32.7635C28.271 32.904 27.9192 32.6483 27.9543 32.3018L28.2347 29.5317C28.2476 29.4047 28.2065 29.2782 28.1214 29.1831L26.2663 27.1069C26.0343 26.8471 26.1686 26.4335 26.5091 26.3597L29.2303 25.7705C29.355 25.7435 29.4626 25.6652 29.5269 25.555L30.9282 23.1492Z"
+                                        fill="#33CA67" />
+                                    <path
+                                        d="M19.0006 16.9361C22.3095 16.9361 24.9919 14.2536 24.9919 10.9447C24.9919 7.63578 22.3095 4.95337 19.0006 4.95337C15.6916 4.95337 13.0093 7.63578 13.0093 10.9447C13.0093 14.2536 15.6916 16.9361 19.0006 16.9361Z"
+                                        stroke="#13322E" stroke-width="1.81818" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M10.6122 21.7289C11.4724 20.2692 12.6986 19.0592 14.1697 18.2185C15.6408 17.378 17.3057 16.9358 19.0001 16.9358C20.6944 16.9358 22.3594 17.378 23.8305 18.2185C25.3015 19.0592 26.5277 20.2692 27.3879 21.7289"
+                                        stroke="#13322E" stroke-width="1.81818" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M25.4417 10.4954C26.8371 10.4943 28.2135 10.8187 29.4615 11.4427C30.7096 12.0667 31.795 12.9733 32.6313 14.0902"
+                                        stroke="#13322E" stroke-width="1.81818" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M20.7969 4.50398C21.021 3.63608 21.4839 2.84841 22.1332 2.23042C22.7825 1.61243 23.592 1.1889 24.4699 1.00791C25.3478 0.826914 26.2589 0.895726 27.0996 1.20652C27.9404 1.51732 28.6772 2.05765 29.2263 2.76615C29.7754 3.47465 30.1147 4.32292 30.2059 5.21463C30.2971 6.10634 30.1365 7.00576 29.7421 7.81073C29.3478 8.61571 28.7356 9.294 27.9753 9.76854C27.2148 10.2431 26.3365 10.4948 25.4402 10.4953"
+                                        stroke="#13322E" stroke-width="1.81818" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M5.37073 14.0902C6.20712 12.9733 7.29245 12.0667 8.54051 11.4427C9.78856 10.8187 11.165 10.4943 12.5604 10.4954"
+                                        stroke="#13322E" stroke-width="1.81818" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M12.562 10.4953C11.6656 10.4948 10.7874 10.2431 10.0269 9.76854C9.26643 9.294 8.6543 8.61571 8.25998 7.81073C7.86567 7.00576 7.70499 6.10634 7.79617 5.21463C7.88736 4.32292 8.22678 3.47465 8.77586 2.76615C9.32494 2.05765 10.0617 1.51732 10.9025 1.20652C11.7432 0.895726 12.6543 0.826914 13.5322 1.00791C14.4101 1.1889 15.2196 1.61243 15.8689 2.23042C16.5182 2.84841 16.9812 3.63608 17.2053 4.50398"
+                                        stroke="#13322E" stroke-width="1.81818" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <div class="flex flex-col gap-2">
+                                    <h2 class="text-3xl font-semibold text-gray-800">Guaranteed Result</h2>
+                                    <p class="text-xl text-gray-600">Disini kamu bakalan dapatet</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <a href="#" class="btn-primary">Daftar CodeInAja</a>
+
+                </div>
+            </div>
+        </section>
+        <section id="testimoni" class="w-full px-4 md:px-6 lg:px-40 py-20">
+
+            <div class="flex flex-col space-y-2 items-center mb-12">
+                <h2 class="text-4xl font-semibold text-primary-900">Testimoni</h2>
+                <p class="text-2xl text-gray-500 text-center">Pendapat mereka tentang CodeInAja</p>
             </div>
 
-            <div class="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3 ">
-                <div class="flex flex-col transition duration-150 ease-in-out p-4 hover:bg-white hover:rounded-2xl ">
-                    <div class="flex-shrink-0">
-                        <img class="h-48 w-full object-cover rounded-xl"
-                            src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
-                            alt="">
+            <div class="mt-16 space-y-16 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:space-y-0">
+                <div class="c-testimoni">
+                    <svg width="24" height="18" viewBox="0 0 24 18" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true" class="flex-shrink-0 text-gray-300">
+                        <path
+                            d="M0 18h8.7v-5.555c-.024-3.906 1.113-6.841 2.892-9.68L6.452 0C3.188 2.644-.026 7.86 0 12.469V18zm12.408 0h8.7v-5.555C21.083 8.539 22.22 5.604 24 2.765L18.859 0c-3.263 2.644-6.476 7.86-6.451 12.469V18z"
+                            fill="currentColor" />
+                    </svg>
+                    <div class="mt-8 sm:mt-0 sm:ml-6 lg:mt-10 lg:ml-0">
+                        <p class="text-lg text-gray-600">My order arrived super quickly. The product is even
+                            better than
+                            I hoped it would be. Very happy customer over here!</p>
+                        <cite class="mt-4 block font-semibold not-italic text-gray-900">Sarah Peters, New
+                            Orleans</cite>
                     </div>
-                    <div class="flex flex-1 flex-col justify-between pt-3">
-                        <div class="flex-1">
-                            <p class="text-sm font-medium text-gray-500">
-                                Mar 16, 2020
-                            </p>
-                            <a href="singgle-page.html" class="mt-2 block">
-                                <p class="text-xl font-semibold text-primary-900">Boost your conversion rate</p>
-                                <p class="mt-3 text-base text-gray-500 line-clamp-2">Lorem ipsum dolor sit amet
-                                    consectetur
-                                    adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga
-                                    culpa,
-                                    similique sequi cum eos quis dolorum.</p>
-                            </a>
-                        </div>
+
+                </div>
+
+
+                <div class="c-testimoni">
+                    <svg width="24" height="18" viewBox="0 0 24 18" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true" class="flex-shrink-0 text-gray-300">
+                        <path
+                            d="M0 18h8.7v-5.555c-.024-3.906 1.113-6.841 2.892-9.68L6.452 0C3.188 2.644-.026 7.86 0 12.469V18zm12.408 0h8.7v-5.555C21.083 8.539 22.22 5.604 24 2.765L18.859 0c-3.263 2.644-6.476 7.86-6.451 12.469V18z"
+                            fill="currentColor" />
+                    </svg>
+                    <div class="mt-8 sm:mt-0 sm:ml-6 lg:mt-10 lg:ml-0">
+                        <p class="text-lg text-gray-600">I had to return a purchase that didn’t fit. The
+                            whole process
+                            was so simple that I ended up ordering two new items!</p>
+                        <cite class="mt-4 block font-semibold not-italic text-gray-900">Kelly McPherson,
+                            Chicago</cite>
                     </div>
                 </div>
-                <div class="flex flex-col transition duration-150 ease-in-out p-4 hover:bg-white hover:rounded-2xl ">
-                    <div class="flex-shrink-0">
-                        <img class="h-48 w-full object-cover rounded-xl"
-                            src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
-                            alt="">
-                    </div>
-                    <div class="flex flex-1 flex-col justify-between pt-3">
-                        <div class="flex-1">
-                            <p class="text-sm font-medium text-gray-500">
-                                Mar 16, 2020
-                            </p>
-                            <a href="singgle-page.html" class="mt-2 block">
-                                <p class="text-xl font-semibold text-primary-900">Boost your conversion rate</p>
-                                <p class="mt-3 text-base text-gray-500 line-clamp-2">Lorem ipsum dolor sit amet
-                                    consectetur
-                                    adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga
-                                    culpa,
-                                    similique sequi cum eos quis dolorum.</p>
-                            </a>
-                        </div>
+
+                <div class="c-testimoni">
+                    <svg width="24" height="18" viewBox="0 0 24 18" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true" class="flex-shrink-0 text-gray-300">
+                        <path
+                            d="M0 18h8.7v-5.555c-.024-3.906 1.113-6.841 2.892-9.68L6.452 0C3.188 2.644-.026 7.86 0 12.469V18zm12.408 0h8.7v-5.555C21.083 8.539 22.22 5.604 24 2.765L18.859 0c-3.263 2.644-6.476 7.86-6.451 12.469V18z"
+                            fill="currentColor" />
+                    </svg>
+                    <div class="mt-8 sm:mt-0 sm:ml-6 lg:mt-10 lg:ml-0">
+                        <p class="text-lg text-gray-600">Now that I’m on holiday for the summer, I’ll
+                            probably order a
+                            few more shirts. It’s just so convenient, and I know the quality will always be
+                            there.</p>
+                        <cite class="mt-4 block font-semibold not-italic text-gray-900">Chris Paul,
+                            Phoenix</cite>
                     </div>
                 </div>
-                <div class="flex flex-col transition duration-150 ease-in-out p-4 hover:bg-white hover:rounded-2xl ">
-                    <div class="flex-shrink-0">
-                        <img class="h-48 w-full object-cover rounded-xl"
-                            src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
-                            alt="">
-                    </div>
-                    <div class="flex flex-1 flex-col justify-between pt-3">
-                        <div class="flex-1">
-                            <p class="text-sm font-medium text-gray-500">
-                                Mar 16, 2020
-                            </p>
-                            <a href="singgle-page.html" class="mt-2 block">
-                                <p class="text-xl font-semibold text-primary-900">Boost your conversion rate</p>
-                                <p class="mt-3 text-base text-gray-500 line-clamp-2">Lorem ipsum dolor sit amet
-                                    consectetur
-                                    adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga
-                                    culpa,
-                                    similique sequi cum eos quis dolorum.</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
             </div>
 
+        </section>
+        <section id="cta" class="w-full bg-secondary-50">
+            <div class="overflow-hidden pt-32 sm:pt-14">
+                <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                    <div class="relative pt-24 pb-16 sm:pb-24">
+                        <div>
+                            <h2 class="text-4xl font-bold tracking-tight text-primary-800 md:text-5xl">
+                                Jadi Kamu <br> Yang Sesungguhnya
+                            </h2>
+                            <div class="mt-6 ">
+                                <a href="#" class="btn-text">
+                                    Gabung CodeInAja <svg width="24" height="24" viewBox="0 0 256 256"
+                                        class="text-primary-600">
+                                        <path
+                                            d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="absolute -top-44 left-1/2 -translate-x-1/2 transform sm:top-6 sm:translate-x-0">
+                            <div class="ml-24 flex min-w-max space-x-6 sm:ml-3 lg:space-x-8">
+                                <div class="flex space-x-6 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-8">
+                                    <div class="flex-shrink-0">
+                                        <img class="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"
+                                            src="https://images.unsplash.com/photo-1536148935331-408321065b18?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                            alt="">
+                                    </div>
+
+
+                                </div>
+                                <div
+                                    class="flex space-x-6 sm:-mt-20 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-8">
+                                    <div class="flex-shrink-0">
+                                        <img class="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"
+                                            src="https://images.unsplash.com/photo-1558655146-364adaf1fcc9?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                            alt="">
+                                    </div>
+
+                                    <div class="mt-6 flex-shrink-0 sm:mt-0">
+                                        <img class="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"
+                                            src="https://images.unsplash.com/photo-1648312182804-346237fbc0ea?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                            alt="">
+                                    </div>
+                                </div>
+                                <div class="flex space-x-6 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-8">
+                                    <div class="flex-shrink-0">
+                                        <img class="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"
+                                            src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                            alt="">
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </section>
     </main>
-    <footer class="bg-primary-500 px-[16px] md:px-[24px] lg:px-[120px]" aria-labelledby="footer-heading">
-        <div class="mx-auto pb-8 pt-16 ">
-            <div class="flex flex-col lg:flex-row justify-between gap-4">
-                <div class="flex flex-col gap-2 w-full lg:w-1/3">
-                    <img class="h-7 w-fit" src="assets/img/logo.png" alt="SIAP TAMPIL">
-                    <p class="text-sm text-gray-200">SIAP TAMPIL (Sistem Informasi Pelayanan Tenaga
-                        Terampil Konstruksi) dikelola
-                        oleh Bidang Bina Konstruksi Dinas Pekerjaan Umum dan Tata Ruang Kab. Sumedang.</p>
-                </div>
-                <div class="flex flex-col gap-2 flex-1 m-0">
-                    <h3 class="text-xl font-semibold leading-6 text-white">Alamat</h3>
-                    <p class="text-sm text-gray-200">Jl. R.A. Kartini No.13, Regol Wetan, Kec.
-                        Sumedang Sel., Kabupaten Sumedang, Jawa Barat 45311</p>
-                </div>
-                <div class="flex flex-col gap-2 flex-1">
-                    <h3 class="text-xl font-semibold leading-6 text-white">Hubungi Kami</h3>
-                    <a href="mailto:binakonstruksisumedang@gmail.com"
-                        class="flex flex-row text-gray-400 space-x-2 hover:text-gray-500">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
-                            <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                            <style>
-                                svg {
-                                    fill: #ffffff
-                                }
-                            </style>
-                            <path
-                                d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
-                        </svg>
-                        <span class="text-sm text-white">binakonstruksisumedang@gmail.com</span>
-                    </a>
-                    <a href="tel:(0261)201240" class="flex flex-row space-x-2 text-gray-400 hover:text-gray-500">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
-                            <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                            <style>
-                                svg {
-                                    fill: #ffffff
-                                }
-                            </style>
-                            <path
-                                d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
-                        </svg>
-                        <span class="text-sm text-white">(0261)201240</span>
-                    </a>
-                </div>
-                <div class="flex flex-col gap-2 flex-1">
-                    <h3 class="text-xl font-semibold leading-6 text-white">Link Terkait</h3>
-                    <ul role="list" class="space-y-1">
-                        <li>
-                            <a href="https://dpupr.sumedangkab.go.id/" target="_blank"
-                                class="text-sm text-gray-200 hover:text-white">Web
-                                Dinas PUTR
-                                Kabupaten Sumedang</a>
-                        </li>
-                        <li>
-                            <a href="https://sumedangkab.go.id/" target="_blank"
-                                class="text-sm text-gray-200 hover:text-white">Website
-                                Pemerintah Kab. Sumedang</a>
-                        </li>
-                    </ul>
-                </div>
+    <footer class="bg-primary-900">
+        <div class="mx-auto max-w-7xl overflow-hidden py-20 px-6 sm:py-24 lg:px-8">
+            <div class="flex flex-col items-center gap-4">
+                <svg width="146" height="53" viewBox="0 0 146 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M115.138 18.644V47.6993H108.752V18.644H115.138Z" fill="#83EEC0" />
+                    <path
+                        d="M122.517 37.7697V47.6994H116.305V37.0359C116.305 30.8192 120.024 25.7251 127.591 25.7251C135.158 25.7251 138.964 30.776 138.964 37.0359V47.6994H132.753V37.7697C132.753 34.4889 131.134 31.6826 127.592 31.6826C124.091 31.6826 122.517 34.4889 122.517 37.7697Z"
+                        fill="#83EEC0" />
+                    <path
+                        d="M119.799 16.4334H104.091C103.659 16.4334 103.31 16.0877 103.31 15.661V6.07242C103.31 5.64572 103.659 5.30005 104.091 5.30005H119.799C120.23 5.30005 120.58 5.64572 120.58 6.07242V15.661C120.581 16.0877 120.23 16.4334 119.799 16.4334Z"
+                        fill="#5473E9" />
+                    <path
+                        d="M105.776 10.9079C105.776 9.59774 106.86 8.49976 108.281 8.49976C109.729 8.49976 110.795 9.53292 110.795 10.9079V13.2057H109.533V12.6702C109.205 13.0761 108.701 13.3253 108.066 13.3253C106.719 13.3253 105.776 12.2366 105.776 10.9079ZM109.468 10.9172C109.468 10.2713 108.963 9.73585 108.281 9.73585C107.598 9.73585 107.103 10.2713 107.103 10.9172C107.103 11.563 107.598 12.0985 108.281 12.0985C108.963 12.0985 109.468 11.563 109.468 10.9172Z"
+                        fill="white" />
+                    <path
+                        d="M112.815 8.63809V13.4451C112.815 14.5987 112.067 15.4011 110.674 15.4011L110.599 14.1643C111.197 14.1643 111.487 13.8502 111.487 13.3981V8.63655H112.815V8.63809ZM111.338 7.14351C111.338 6.70061 111.712 6.33179 112.161 6.33179C112.609 6.33179 112.974 6.70061 112.974 7.14351C112.974 7.59566 112.609 7.95523 112.161 7.95523C111.712 7.95523 111.338 7.59566 111.338 7.14351Z"
+                        fill="#83EEC0" />
+                    <path
+                        d="M113.095 10.9077C113.095 9.59749 114.18 8.49951 115.601 8.49951C117.049 8.49951 118.115 9.53268 118.115 10.9077V13.2055H116.853V12.67C116.525 13.0758 116.021 13.3251 115.385 13.3251C114.04 13.3251 113.095 12.2364 113.095 10.9077ZM116.788 10.9169C116.788 10.2711 116.283 9.73561 115.601 9.73561C114.918 9.73561 114.422 10.2711 114.422 10.9169C114.422 11.5627 114.918 12.0982 115.601 12.0982C116.284 12.0982 116.788 11.5627 116.788 10.9169Z"
+                        fill="white" />
+                    <path
+                        d="M7.03613 28.8661C7.03613 18.3732 15.3775 10.0322 26.0626 10.0322C32.4414 10.0322 38.5473 13.3686 41.2732 19.0182L34.7852 22.6239C32.9864 19.5028 30.1514 17.5121 25.7351 17.5121C19.6292 17.5121 15.2137 22.3014 15.2137 28.8661C15.2137 35.4309 19.5754 40.2202 25.7351 40.2202C30.1514 40.2202 33.0948 38.2295 34.7852 35.1083L41.2732 38.714C38.5473 44.3636 32.4414 47.7 26.0626 47.7C15.3775 47.6993 7.03613 39.3591 7.03613 28.8661Z"
+                        fill="#5473E9" />
+                    <path
+                        d="M56.8775 34.7955C56.8775 27.183 62.1866 21.8435 69.9002 21.8435C72.4047 21.8435 74.8085 22.7332 76.612 24.1668L76.6627 11.2642H83.7744V34.7955C83.7744 42.2114 78.0646 47.6989 70.301 47.6989C62.6879 47.6989 56.8775 41.8657 56.8775 34.7955ZM76.6619 34.7955C76.6619 31.3349 73.9571 28.4677 70.301 28.4677C66.645 28.4677 63.99 31.3349 63.99 34.7955C63.99 38.2562 66.645 41.074 70.301 41.074C73.9571 41.074 76.6619 38.2569 76.6619 34.7955Z"
+                        fill="#5473E9" />
+                    <path
+                        d="M79.4657 34.5994C79.4657 27.53 84.675 21.6968 92.3379 21.6968C100.201 21.6968 104.76 27.4313 104.76 34.1048V36.1812H86.3279C86.8285 39.4443 89.3828 41.6186 92.9391 41.6186C95.6431 41.6186 97.8981 40.3339 99.0497 38.0593L104.509 40.7784C102.356 45.178 98.2481 47.6996 92.989 47.6996C85.2761 47.6996 79.4657 42.4103 79.4657 34.5994ZM97.6977 32.2754C97.3967 29.7538 95.2938 27.8263 92.288 27.8263C89.1825 27.8263 87.1287 29.8039 86.6281 32.2754H97.6977Z"
+                        fill="#5473E9" />
+                    <path
+                        d="M34.4874 35.0736C34.4874 28.1825 40.1996 22.4958 47.5725 22.4958C55.0429 22.4958 60.7067 28.2304 60.7067 35.0736C60.7067 42.0134 54.9946 47.6993 47.5725 47.6993C40.1512 47.6993 34.4874 42.0126 34.4874 35.0736ZM53.7735 35.1215C53.7735 31.7481 51.1366 28.9533 47.5725 28.9533C44.0085 28.9533 41.4206 31.7481 41.4206 35.1215C41.4206 38.4949 44.0085 41.2896 47.5725 41.2896C51.1366 41.2896 53.7735 38.4949 53.7735 35.1215Z"
+                        fill="#5473E9" />
+                </svg>
+                <p class="text-base text-white">CodeInAja merupakan sebuah platform untuk belajar bahasa pemrograman</p>
             </div>
-        </div>
-        <div class="border-t border-gray-200/10 py-4 mt-4">
-            <p class="text-sm leading-5 text-gray-300 text-center">&copy; 2023 SIAP TAMPIL (Sistem Informasi
-                Pelayanan Tenaga
-                Terampil Konstruksi). All rights reserved.</p>
-        </div>
+            <div class="mt-10 flex justify-center space-x-10">
+                <a href="#" class="text-gray-400 hover:text-white">
+                    <span class="sr-only">Facebook</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
+
+                <a href="#" class="text-gray-400 hover:text-white">
+                    <span class="sr-only">Instagram</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
+
+                <a href="#" class="text-gray-400 hover:text-white">
+                    <span class="sr-only">Twitter</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                    </svg>
+                </a>
+
+                <a href="#" class="text-gray-400 hover:text-white">
+                    <span class="sr-only">GitHub</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
+
+                <a href="#" class="text-gray-400 hover:text-white">
+                    <span class="sr-only">YouTube</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </div>
+            <p class="mt-10 text-center text-xs leading-5 text-white">&copy; 2020 CodeInAja, Inc. All rights
+                reserved.</p>
         </div>
     </footer>
+
     <script>
         function toggleMenu() {
             var menu = document.getElementById("menu");

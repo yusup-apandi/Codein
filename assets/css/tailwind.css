@@ -3,14 +3,30 @@
 @tailwind utilities;
 
 @layer components {
+  /* Button*/
   .btn-primary{
-    display: flex;
-    width: 83px;
-    height: 30px;
-    overflow: hidden;
-    padding: 3px 4px;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
+  @apply flex w-fit h-fit px-3 py-2 rounded-lg justify-center items-center gap-2 bg-primary-700 text-white font-semibold text-sm hover:bg-primary-800;
   }
+  .btn-text{
+    @apply flex w-fit h-fit px-3 py-2 rounded-lg justify-center items-center gap-2 text-primary-700 font-semibold text-sm hover:bg-primary-50;
+  }
+  /* Navigasi */
+  .nav{
+    @apply block mt-4 md:inline-block md:mt-0 text-base font-semibold text-primary-800 hover:text-primary-600 rounded-lg px-3 py-2;
+  }
+  .nav-active{
+    @apply block mt-4 md:inline-block md:mt-0 text-base font-semibold hover:text-primary-600 rounded-lg px-3 py-2 text-primary-600;
+  }
+  .navbar{
+    @apply backdrop-blur-md bg-white/70 shadow fixed top-0 z-20 w-screen ;
+  }
+.badge-gray{
+  @apply inline-flex w-fit items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10;
+}
+.badge-text{
+  @apply text-sm font-semibold text-secondary-800;
+}
+.c-testimoni{
+  @apply shadow-md p-6 rounded-2xl bg-white;
+}
 }
